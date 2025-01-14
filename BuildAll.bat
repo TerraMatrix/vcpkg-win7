@@ -15,3 +15,7 @@ call ./bash/boost.bat
 echo "install  fmt 11.0.2#1"
 echo "--------------------------------------------"
 call ./bash/fmt.bat
+
+echo "install  sltbench  2.4.0#3"
+echo "--------------------------------------------"
+call ./bash/sltbench .bat

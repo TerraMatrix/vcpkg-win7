@@ -1,0 +1,37 @@
+diff --git "a/src/BenchmarksContainer.cpp" "b/src/BenchmarksContainer.cpp"
+index 2efc28871..cec37c222 100644
+--- "a/src/BenchmarksContainer.cpp"
++++ "b/src/BenchmarksContainer.cpp"
+@@ -4,7 +4,7 @@
+ #include <sltbench/impl/IBenchmark.h>
+ 
+ #include <cstdio>
+-#include <map>
++#include <vector>
+ #include <memory>
+ #include <string>
+ #include <utility>
+@@ -25,10 +25,12 @@ public:
+ 	void Add(std::unique_ptr<IBenchmark>&& benchmark)
+ 	{
+ 		const std::string name{ benchmark->name };
+-		const auto it = name_to_bm_.find(name);
++		const auto it = std::find_if(name_to_bm_.begin(), name_to_bm_.end(),
++									 [name](const auto &p)
++									 { return p.first == name; });
+ 		if (it == name_to_bm_.end())
+ 		{
+-			name_to_bm_[name] = std::move(benchmark);
++			name_to_bm_.push_back(std::pair<std::string, std::unique_ptr<IBenchmark>>(name, std::move(benchmark)));
+ 		}
+ 		else
+ 		{
+@@ -49,7 +51,7 @@ public:
+ 	}
+ 
+ private:
+-	std::map<std::string, std::unique_ptr<IBenchmark>> name_to_bm_;
++	std::vector<std::pair<std::string, std::unique_ptr<IBenchmark>>> name_to_bm_;
+ };
+ 
+ }  // namespace

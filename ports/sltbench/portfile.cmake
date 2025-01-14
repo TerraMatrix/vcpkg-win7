@@ -15,6 +15,7 @@ vcpkg_from_github(
     HEAD_REF master
     PATCHES
         "${MISSING_STDDEF_H}"
+        BenchmarksContainer.patch
 )
 
 vcpkg_cmake_configure(SOURCE_PATH "${SOURCE_PATH}" WINDOWS_USE_MSBUILD)
