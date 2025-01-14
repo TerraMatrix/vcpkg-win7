@@ -327,3 +327,6 @@ prefab/
 # Codespaces
 ###################
 pythonenv3.8/
+
+# 新增 .svn 忽略项
+.svn/
