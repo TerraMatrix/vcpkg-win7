@@ -14,10 +14,11 @@ if(CMAKE_HOST_WIN32)
         set(download_sha512 D1D1183682D20AC057C45BF2AD264B6568CDEB54A1502823C76A2448386CAEF79A3AB9EA8FF57A5C023D432590FCCB5E3E9980F8760CD9BAAC5A2A82BA240D73)
     elseif(build_arch MATCHES "(amd|AMD)64")
         set(tool_subdirectory "python-${program_version}-x64")
-        # https://www.python.org/ftp/python/3.12.7/python-3.12.7-embed-amd64.zip
-        set(download_urls "https://www.python.org/ftp/python/${program_version}/python-${program_version}-embed-amd64.zip")
+        # https://www.python.org/ftp/python/3.12.7/python-3.12.7-embed-amd64.zip change to
+        # https://raw.githubusercontent.com/adang1345/PythonWin7/master/3.12.7/python-3.12.7-embed-amd64.zip
+        set(download_urls "https://raw.githubusercontent.com/adang1345/PythonWin7/master/${program_version}/python-${program_version}-embed-amd64.zip")
         set(download_filename "python-${program_version}-embed-amd64.zip")
-        set(download_sha512 2F67A8487A9EDECE26B73AAB27E75249E538938AD976D371A9411B54DBAE20AFEAC82B406AD4EEEE38B1CF6F407E7620679D30C0FFF82EC8E8AE62268C322D59)
+        set(download_sha512 1da4b1e3aec60d23806bff5d4245800eda1c07a39c3566e5da19cf6a9bd0539327fb710e37328631d9f1c6e98f31c5124ae62d66b0e0df10c8bfd478d9041f26)
     else()
         set(tool_subdirectory "python-${program_version}-x86")
         # https://www.python.org/ftp/python/3.12.7/python-3.12.7-embed-win32.zip

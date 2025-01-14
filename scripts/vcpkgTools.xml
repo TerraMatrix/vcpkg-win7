@@ -3,8 +3,8 @@
     <tool name="python3" os="windows">
         <version>3.12.7</version>
         <exeRelativePath>python.exe</exeRelativePath>
-        <url>https://www.python.org/ftp/python/3.12.7/python-3.12.7-embed-win32.zip</url>
-        <sha512>15542080e0cc25c574391218107fe843006e8c5a7161d1cd48cf14a3c47155c0244587273d9c747f35b15ea17676869ecce079214824214c1a62abfc86ad9f9b</sha512>
+        <url>https://raw.githubusercontent.com/adang1345/PythonWin7/master/3.12.7/python-3.12.7-embed-win32.zip</url>
+        <sha512>239f96d467a82a7c38a6faf4dec08f48a0c1f5d8eabb6af12e4184eef5c1422049d2d7520eff1d84162e3d3ff82b43adec859e25addd4902219d363a7c50be25</sha512>
         <archiveName>python-3.12.7-embed-win32.zip</archiveName>
     </tool>
     <tool name="python3_with_venv" os="windows">
