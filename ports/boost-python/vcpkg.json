@@ -99,6 +99,11 @@
       "name": "boost-utility",
       "version>=": "1.86.0"
     },
-    "python3"
+    {
+      "name": "python3",
+      "features": [
+        "deprecated-win7-support"
+      ]
+    }
   ]
 }
