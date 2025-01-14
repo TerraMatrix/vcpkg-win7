@@ -72,11 +72,6 @@
       "version>=": "1.86.0"
     },
     {
-      "name": "boost-cobalt",
-      "platform": "!osx & !ios & !android & !uwp",
-      "version>=": "1.86.0"
-    },
-    {
       "name": "boost-compat",
       "version>=": "1.86.0"
     },
