@@ -39,3 +39,7 @@ call ./bash/glm.bat
 echo "install  gtest 1.15.2"
 echo "--------------------------------------------"
 call ./bash/gtest.bat
+
+echo "install  glew  2.2.0#4"
+echo "--------------------------------------------"
+call ./bash/glew.bat
