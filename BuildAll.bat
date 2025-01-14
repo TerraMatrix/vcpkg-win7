@@ -35,3 +35,7 @@ call ./bash/flann.bat
 echo "install  glm 1.0.1#3"
 echo "--------------------------------------------"
 call ./bash/glm.bat
+
+echo "install  gtest 1.15.2"
+echo "--------------------------------------------"
+call ./bash/gtest.bat
