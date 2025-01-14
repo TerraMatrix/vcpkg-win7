@@ -19,3 +19,7 @@ call ./bash/fmt.bat
 echo "install  sltbench  2.4.0#3"
 echo "--------------------------------------------"
 call ./bash/sltbench .bat
+
+echo "install  freetype 2.13.3"
+echo "--------------------------------------------"
+call ./bash/freetype.bat
