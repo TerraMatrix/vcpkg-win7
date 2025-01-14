@@ -31,3 +31,7 @@ call ./bash/hdf5.bat
 echo "install  flann 2019-04-07#7"
 echo "--------------------------------------------"
 call ./bash/flann.bat
+
+echo "install  glm 1.0.1#3"
+echo "--------------------------------------------"
+call ./bash/glm.bat
